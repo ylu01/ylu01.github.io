@@ -7,12 +7,16 @@ and open the template in the editor.
     Created on : 28-Jul-2017, 11:17:09 PM
     Author     : Yang
 */
+
 body{
-    background-color:black;
+    background-image: url('bg.png');
 }
 #topHeader{
-	background-color:#1C78A5;
-        padding:2px;
+    width:1000px;
+    margin:auto;
+	background-color:lightblue;
+        padding:1px;
+        padding-top:5px;
 	text-align:center;
 }
 #topWordFormat{
@@ -23,12 +27,15 @@ body{
 }
 nav{
 	text-align:right;
-        width:100%;
-	background-color:gray;
+        width:70%;
+        margin:auto;
+        border-radius:25px;
+	background: -webkit-linear-gradient(45deg, #FFFFFF,#5C8DC1);
+        background: -moz-linear-gradient(45deg, #FFFFFF, #5C8DC1);
+        background: -ms-linear-gradient(45deg, #FFFFFF, #5C8DC1);
+        background: -o-linear-gradient(45deg, #FFFFFF, #5C8DC1);
 	font-size:150%;
 	padding:3px;
-        z-index:10000;
-        position:fixed;
         top:0;
 }
 .navText{
@@ -60,6 +67,7 @@ nav{
 
 
 #contactCard{
+    display:block;
 	text-align:center;
 	width:1000px;
 	background-color:lightblue;
@@ -67,7 +75,7 @@ nav{
 	padding:1px;
 }
 #projectSection{
-    text-align:center;
+        text-align:center;
 	width:1000px;
 	background-color:lightblue;
 	margin:auto;
@@ -91,20 +99,50 @@ p.break{
     word-wrap:break-word;
 }
 #pic{
+    position:relative;
+    margin:auto;
     display:block;
-    margin-left:25px;
-    margin-bottom:25px;
     width:300px;
-    height:auto;
     border-radius:200px;
     box-shadow: 0px 2px 150px 5px #000, 0px 0px 0px 10px #fff;
 }
 .container {
   position: relative;
+  margin:auto;
   width: 50%;
 }
 .projectItemContainer{
     position: relative;
+}
+
+hr.seperate{
+    width:80%;
+	border: 1px solid black;
+        border-radius:25px;
+	text-align: center;
+        background: -webkit-linear-gradient(45deg, #ffffff 0%, #1263e5);
+        background: -moz-linear-gradient(45deg, #FFFFFF, #5C8DC1);
+        background: -ms-linear-gradient(45deg, #FFFFFF, #5C8DC1);
+        background: -o-linear-gradient(45deg, #FFFFFF, #5C8DC1);
+        color:blue;
+        height:15px;
+}
+hr.seperate:after{
+        
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: -webkit-linear-gradient(45deg, #FFFFFF, #5C8DC1);
+        background: -moz-linear-gradient(45deg, #FFFFFF, #5C8DC1);
+        background: -ms-linear-gradient(45deg, #FFFFFF, #5C8DC1);
+        background: -o-linear-gradient(45deg, #FFFFFF, #5C8DC1);
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
 }
 
 .image {
@@ -118,7 +156,7 @@ p.break{
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 65px;
+  left: 100px;;
   right: 0;
   height: 100%;
   width: 300px;
@@ -161,11 +199,8 @@ p.break{
 
 
 #bio{
-    position:absolute;
-    margin-left:400px;
     text-align:center;
     font-size:150%;
-    max-width: 550px;
 }
 
 p.test {
@@ -195,7 +230,8 @@ img{
     border-radius:15px;
 }
 .footer{
-    background-color:#1C78A5;
+    background-color:#ECEFF2;
+    border-radius:15px;;
     padding:1px;
     
 }
