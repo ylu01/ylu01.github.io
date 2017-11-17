@@ -8,8 +8,9 @@ and open the template in the editor.
     Author     : Yang
 */
 
+/* many of the tile patterns are taken from https://www.toptal.com/designers/subtlepatterns */
 body{
-    background-image: url('bg.png');
+    background-image: url('bg1.jpg');
 }
 
 /*
@@ -18,7 +19,7 @@ first part, introduction name card
 #topHeader{
     width:1200px;
     margin:auto;
-	background-color:lightblue;
+	background-image: url('bg8.jpg');
         padding:1px;
         padding-top:5px;
 	text-align:center;
@@ -36,12 +37,10 @@ nav{
         width:80%;
         margin:auto;
         border-radius:25px;
-	background: -webkit-linear-gradient(45deg, #FFFFFF,#5C8DC1);
-        background: -moz-linear-gradient(45deg, #FFFFFF, #5C8DC1);
-        background: -ms-linear-gradient(45deg, #FFFFFF, #5C8DC1);
-        background: -o-linear-gradient(45deg, #FFFFFF, #5C8DC1);
+	background-image: url('bg7.jpg');
 	font-size:150%;
 	padding:3px;
+        margin-bottom:15px;
         top:0;
 }
 .navText{
@@ -50,7 +49,7 @@ nav{
     padding:0px;
 }
 
-/* the stuff for fanxy colored text */
+/* the stuff for fancy colored text */
 .sectionTitle{
     font-size:200%;
     font-family:Arial Black;
@@ -78,7 +77,7 @@ nav{
     display:block;
     text-align:center;
     width:1200px;
-    background-color:lightblue;
+    background-image: url('bg8.jpg');
     margin:auto;
     padding:1px;
 }
@@ -87,7 +86,7 @@ nav{
 #projectSection{
     text-align:center;
     width:1200px;
-    background-color:lightblue;
+    background-image: url('bg8.jpg');
     margin:auto;
     padding:1px;
 }
@@ -127,6 +126,17 @@ p.break{
     position: relative;
 }
 /* seperators*/
+
+hr.style { 
+  border: 0; 
+  height: 3px; 
+  width:1200px;
+  background-image: -webkit-linear-gradient(left, white, blue, white);
+  background-image: -moz-linear-gradient(left, white, blue, white);
+  background-image: -ms-linear-gradient(left, white, blue, white);
+  background-image: -o-linear-gradient(left, white, blue, white); 
+}
+
 hr.seperate{
     width:80%;
 	border: 1px solid black;
@@ -242,7 +252,7 @@ img{
     border-radius:15px;
 }
 .footer{
-    background-color:#ECEFF2;
+    background-image: url('bg13.jpg');
     border-radius:15px;;
     padding:1px;
     
@@ -276,4 +286,24 @@ img{
     text-align:center;
     margin:auto;
     margin-left:-7px;
+}
+/* Multiple Triangles */
+.ss::before,
+.ss::after {
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.ss::before {
+	top: -25px;
+	background: url('bg8.jpg');
+}
+
+.ss::after {
+	bottom: -25px;
+	z-index: 10;
+	background: url('bg8.jpg');
 }
