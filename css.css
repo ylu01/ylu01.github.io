@@ -11,8 +11,12 @@ and open the template in the editor.
 body{
     background-image: url('bg.png');
 }
+
+/*
+first part, introduction name card
+*/
 #topHeader{
-    width:1000px;
+    width:1200px;
     margin:auto;
 	background-color:lightblue;
         padding:1px;
@@ -25,9 +29,11 @@ body{
     margin-bottom:0px;
     
 }
+/*
+the navigation bar and text
+*/
 nav{
-	text-align:right;
-        width:70%;
+        width:80%;
         margin:auto;
         border-radius:25px;
 	background: -webkit-linear-gradient(45deg, #FFFFFF,#5C8DC1);
@@ -39,11 +45,12 @@ nav{
         top:0;
 }
 .navText{
-    margin-right:180px;
-    margin-left:-150px;
+    text-align:center;
     word-spacing:-10px;
     padding:0px;
 }
+
+/* the stuff for fanxy colored text */
 .sectionTitle{
     font-size:200%;
     font-family:Arial Black;
@@ -66,21 +73,26 @@ nav{
 	}
 
 
+/*the about section*/
 #contactCard{
     display:block;
-	text-align:center;
-	width:1000px;
-	background-color:lightblue;
-	margin:auto;
-	padding:1px;
+    text-align:center;
+    width:1200px;
+    background-color:lightblue;
+    margin:auto;
+    padding:1px;
 }
+
+/*the projects section. */
 #projectSection{
-        text-align:center;
-	width:1000px;
-	background-color:lightblue;
-	margin:auto;
-	padding:1px;
+    text-align:center;
+    width:1200px;
+    background-color:lightblue;
+    margin:auto;
+    padding:1px;
 }
+
+/*my photo*/
 #picture{
 	width:300px;
 	height:300px;
@@ -114,7 +126,7 @@ p.break{
 .projectItemContainer{
     position: relative;
 }
-
+/* seperators*/
 hr.seperate{
     width:80%;
 	border: 1px solid black;
@@ -156,7 +168,7 @@ hr.seperate:after{
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 100px;;
+  left: 150px;
   right: 0;
   height: 100%;
   width: 300px;
@@ -172,8 +184,8 @@ hr.seperate:after{
   bottom: 0;
   left: 5px;
   right: 0;
-  height: 307px;
-  width: 428px;
+  height: 328px;
+  width: 458px;
   opacity: 0;
   border-radius:15px;
   transition: .5s ease;
@@ -206,7 +218,7 @@ hr.seperate:after{
 p.test {
     word-wrap: break-word;
 }
-
+/* the projects section */ 
 .projectsContainer{
   padding: 0;
   margin: 0;
